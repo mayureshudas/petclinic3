@@ -1,0 +1,13 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: petclinic1
+  host: petclinic1
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - petclinic1-cloudantNoSQLDB
+  env:
+    JBP_CONFIG_IBMJDK: 'version: 1.8. '
